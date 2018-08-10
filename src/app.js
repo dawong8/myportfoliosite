@@ -4,6 +4,7 @@ import Main from './components/main';
 
 import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
 import { Link } from 'react-router-dom';
+import './app.css';
 
 
 class App extends React.Component {
@@ -13,8 +14,9 @@ class App extends React.Component {
 				{/* Uses Link transparent header that draws on top of the layout's background */}
 				<div style={{height: '300px', position: 'relative'}}>
 				    <Layout style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover'}}>
-				        <Header transparent title="Danny Wong" style={{color: 'white'}}>
+				        <Header transparent title="" style={{color: 'white'}}>
 				            <Navigation>
+				            	<Link to="/">Home</Link> 
 				                <Link to="/resume">Resume</Link>
 				                <Link to="/aboutme">About Me</Link>
 				                <Link to="/projects">Projects</Link>
@@ -22,6 +24,7 @@ class App extends React.Component {
 				        </Header>
 				        <Drawer title="Danny Wong">
 				            <Navigation>
+				            	<Link to="/">Home</Link> 
 				                <Link to="/resume">Resume</Link>
 				                <Link to="/aboutme">About Me</Link>
 				                <Link to="/projects">Projects</Link>
@@ -30,11 +33,10 @@ class App extends React.Component {
 
 
 				        <Content />
-				        <Content>
-				        <Main />
-				        </Content>
 				    </Layout>
 				</div>
+				<Main />
+
 
 			</div> 
 
