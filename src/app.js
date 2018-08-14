@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 
 import Main from './components/main';
+import Popup from './components/popup';
 
-import { Layout, Header, Navigation, Drawer, Content } from 'react-mdl';
+
+import { Layout, Header, Navigation, Drawer, Content, Button, Footer, FooterLinkList, FooterSection } from 'react-mdl';
 import { Link } from 'react-router-dom';
 import './app.css';
 
@@ -12,32 +14,42 @@ class App extends React.Component {
 		return (
 			<div>
 				{/* Uses Link transparent header that draws on top of the layout's background */}
-				<div style={{height: '300px', position: 'relative'}}>
-				    <Layout style={{background: 'url(http://www.getmdl.io/assets/demos/transparent.jpg) center / cover'}}>
-				        <Header transparent title="" style={{color: 'white'}}>
+				<div style={{height: '50px', position: 'relative'}}>
+					
+					{/*<Link to="/"> <img style={{width:'4%', padding:'15px', float:'left'}}src={require('./images/yuri.png')}/> </Link>*/}
+
+
+				    <Layout >
+				        <Header transparent title=" " style={{color: '#000'}}>
+
 				            <Navigation>
-				            	<Link to="/">Home</Link> 
-				                <Link to="/resume">Resume</Link>
-				                <Link to="/aboutme">About Me</Link>
-				                <Link to="/projects">Projects</Link>
+				            	<Link to="/"> <Button> <p className="box"> HOME </p> </Button> </Link> 
+				                <Link to="/watch"> <Button> <p className="box"> WATCH </p> </Button> </Link>
+				                <Link to="#">  <Popup />  </Link>
+
+				                <Link to="/"> <Button> <p className="box"> BLOG </p> </Button> </Link>
+				                <Link to="/projects"> <Button> <p className="box"> PLAY </p> </Button> </Link>
+				                <Link to="/projects"> <Button> <p className="box"> SHOP</p>  </Button> </Link>
 				            </Navigation>
 				        </Header>
-				        <Drawer title="Danny Wong">
-				            <Navigation>
-				            	<Link to="/">Home</Link> 
-				                <Link to="/resume">Resume</Link>
-				                <Link to="/aboutme">About Me</Link>
-				                <Link to="/projects">Projects</Link>
-				            </Navigation>
-				        </Drawer>
+				        
 
 
 				        <Content />
 				    </Layout>
 				</div>
+
 				<Main />
 
 
+				<Footer size="mini">
+				    <FooterSection type="left" logo="Team Yuri">
+				        <FooterLinkList>
+				            <Link to="/">Help</Link>
+				            <Link to="/">Privacy & Terms</Link>
+				        </FooterLinkList>
+				    </FooterSection>
+				</Footer>
 			</div> 
 
 
