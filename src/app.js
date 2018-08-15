@@ -24,7 +24,7 @@ class App extends React.Component {
 
 				            <Navigation>
 				            	<Link to="/"> <Button> <p className="box"> HOME </p> </Button> </Link> 
-				                <Link to="/watch"> <Button> <p className="box"> WATCH </p> </Button> </Link>
+				                <Link to="/"> <Button> <p className="box"> WATCH </p> </Button> </Link>
 				                <Link to="#">  <Popup />  </Link>
 
 				                <Link to="/"> <Button> <p className="box"> BLOG </p> </Button> </Link>
@@ -38,7 +38,7 @@ class App extends React.Component {
 				        <Content />
 				    </Layout>
 				</div>
-
+				<div style={{background:'black', width:'100%', height:'10px'}}> </div>
 				<Main />
 
 

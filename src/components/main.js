@@ -3,7 +3,7 @@ import React from 'react';
 import LandingPage from './landingpage';
 import AboutMe from './aboutme';
 import Projects from './projects';
-import Resume from './resume';
+import Yuri from './yuri';
 
 import { Switch, Route } from 'react-router-dom';
 
@@ -12,7 +12,7 @@ const Main = () => (
 		<Route exact path="/" component={LandingPage} /> 
 		<Route path='/aboutme' component={AboutMe} />
 		<Route path='/projects' component={Projects} />
-		<Route path='/resume' component={Resume} />
+		<Route path='/Yuri' component={Yuri} />
 
 	</Switch>
 )

@@ -32,7 +32,7 @@ class Popup extends React.Component {
         <Dialog open={this.state.openDialog} onCancel={this.handleCloseDialog}>
           <DialogTitle> <p className="box"> Which one? </p> </DialogTitle>
           <DialogContent>
-            <Link to="/resume" style={{ textDecoration: 'none', color:'black' }}> <img onClick={this.handleCloseDialog} style={{padding:'10px', width:'25%'}}src={require('../images/yuri.png')}/> Yuri</Link> <br/>         
+            <Link to="/yuri" style={{ textDecoration: 'none', color:'black' }}> <img onClick={this.handleCloseDialog} style={{padding:'10px', width:'25%'}}src={require('../images/yuri.png')}/> Yuri</Link> <br/>         
             <Link to="/resume" style={{ textDecoration: 'none', color:'black' }}> <img onClick={this.handleCloseDialog} style={{padding:'10px', width:'25%'}}src={require('../images/clip.png')}/> Clip </Link> <br/>         
             <Link to="/resume" style={{ textDecoration: 'none', color:'black' }}> <img onClick={this.handleCloseDialog} style={{padding:'10px', width:'25%'}}src={require('../images/momo.png')}/> Momo</Link> <br/>         
             <Link to="/resume" style={{ textDecoration: 'none', color:'black' }}> <img onClick={this.handleCloseDialog} style={{padding:'10px', width:'25%'}}src={require('../images/sugar.png')}/> Sugar</Link> <br/>         
