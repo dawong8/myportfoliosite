@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 
 import Main from './components/main';
 import Popup from './components/popup';
+import Members from './components/members';
 
 
 import { Layout, Header, Navigation, Drawer, Content, Button, Footer, FooterLinkList, FooterSection } from 'react-mdl';
@@ -32,7 +33,10 @@ class App extends React.Component {
 				                <Link to="/projects"> <Button> <p className="box"> SHOP</p>  </Button> </Link>
 				            </Navigation>
 				        </Header>
-				        
+				        <Drawer title="">
+				                <Link to="#">  <Members />  </Link>
+				                
+				        </Drawer>
 
 
 				        <Content />

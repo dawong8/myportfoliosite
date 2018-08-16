@@ -36,11 +36,11 @@ class LandingPage extends Component {
 
 					{/* About */}
 					<div className="backdrop"> 
-						<div style={{padding:'50px'}}> 
-							<div className="panel" style={{padding:'50px'}}> 
+						<div style={{padding:'5%'}}> 
+							<div className="panel" style={{padding:'5%'}}> 
 								<img style={{width: '10%', height:'auto' }} src={require('../images/yuri.png')} />
 
-								<p style={{ fontSize: '35px'}}> Message from Yuri </p>
+								<p style={{ fontSize: '35px'}}> About Us </p>
 								<p className="italics"> Under the sun.</p>
 
 								<br /> 
@@ -55,6 +55,35 @@ class LandingPage extends Component {
 					{/* Videos */}
 					<div className="">
 						<div style={{width: '80%', margin: 'auto'}}>
+
+							<div className="fancy-font" > 
+								    <p style={{fontSize:'35px'}}> Meet the Members</p>	 
+								</div>
+							    <Grid style={{paddingBottom:'50px'}}>
+
+							        <Cell col={2}>
+
+										<img className="blur" style={{width: '100%', height:'90%' }} src={'https://pre00.deviantart.net/b6a2/th/pre/f/2018/189/d/1/2_by_edalie_chan-dcgo1uh.png'} />
+							        </Cell>
+							        <Cell col={2}>
+
+										<img className="blur" style={{width: '100%', height:'100%' }} src={('https://pre00.deviantart.net/0694/th/pre/f/2018/189/d/2/1_by_edalie_chan-dcgo1vg.png')} />
+							        </Cell><Cell col={2}>
+
+										<img className="blur" style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/2331/th/pre/f/2018/189/a/2/4_by_edalie_chan-dcgo1t6.png')} />
+							        </Cell><Cell col={2}>
+
+										<img className="blur" style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/4df6/th/pre/f/2018/189/a/a/3_by_edalie_chan-dcgo1tp.png')} />
+							        </Cell><Cell col={2}>
+
+										<img className="blur" style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/72e4/th/pre/f/2018/227/2/1/6_by_edalie_chan-dck7ivs.png')} />
+							        </Cell>
+							        <Cell col={2}>
+
+										<img className="blur" style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/b238/th/pre/i/2018/227/d/6/5_by_edalie_chan-dck7iwc.png')} />
+							        </Cell>
+									
+							    </Grid>	
 							   
 							<div className="box" > 
 							    <p style={{fontSize:'35px'}}> Latest Videos</p>	 
@@ -72,47 +101,7 @@ class LandingPage extends Component {
 
 
 						    </Grid>	
-								<div className="fancy-font" > 
-								    <p style={{fontSize:'35px'}}> Meet the Members</p>	 
-								</div>
-							    <Grid style={{paddingBottom:'50px'}}>
-
-							        <Cell col={2}>
-
-										<img className="blur" style={{width: '75%', height:'85%' }} src={'https://pre00.deviantart.net/b6a2/th/pre/f/2018/189/d/1/2_by_edalie_chan-dcgo1uh.png'} />
-							        </Cell>
-							        <Cell col={2}>
-
-										<img className="blur" style={{width: '75%', height:'95%' }} src={('https://pre00.deviantart.net/0694/th/pre/f/2018/189/d/2/1_by_edalie_chan-dcgo1vg.png')} />
-							        </Cell><Cell col={2}>
-
-										<img className="blur" style={{width: '75%', height:'85%' }} src={('https://pre00.deviantart.net/2331/th/pre/f/2018/189/a/2/4_by_edalie_chan-dcgo1t6.png')} />
-							        </Cell><Cell col={2}>
-
-										<img className="blur" style={{width: '75%', height:'85%' }} src={('https://pre00.deviantart.net/4df6/th/pre/f/2018/189/a/a/3_by_edalie_chan-dcgo1tp.png')} />
-							        </Cell><Cell col={2}>
-
-										<img className="blur" style={{width: '75%', height:'85%' }} src={require('../images/jayden.png')} />
-							        </Cell>
-							        <Cell col={2}>
-
-										<img className="blur" style={{width: '75%', height:'75%' }} src={require('../images/ann.png')} />
-							        </Cell>
-									<Cell col={2}>
-										<p className="box"> SUGAR </p>
-							        </Cell>
-									<Cell col={2}>
-										<p className="box"> YURI </p>
-							        </Cell><Cell col={2}>
-										<p className="box"> CLIP </p>
-							        </Cell><Cell col={2}>
-										<p className="box"> MOMO </p>
-							        </Cell><Cell col={2}>
-										<p className="box"> JAYDEN </p>
-							        </Cell><Cell col={2}>
-										<p className="box"> TRAGEDY </p>
-							        </Cell>
-							    </Grid>	
+								
 
 							<div style={{background:'black', width:'100%', height:'10px', marginBottom:'50px'}}> </div>
 
