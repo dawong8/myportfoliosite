@@ -1,6 +1,7 @@
 import React, { Component } from 'react'; 
 import { Slide } from 'react-slideshow-image';
 import { Cell, Grid} from 'react-mdl';
+import { Link } from 'react-router-dom';
 
 
 const images = [
@@ -56,35 +57,35 @@ class LandingPage extends Component {
 					<div className="">
 						<div style={{width: '80%', margin: 'auto'}}>
 
-							<div className="fancy-font" > 
+							{/*<div className="fancy-font" > 
 								    <p style={{fontSize:'35px'}}> Meet the Members</p>	 
 								</div>
-							    <Grid style={{paddingBottom:'50px'}}>
+							    <Grid style={{paddingBottom:'100px'}}>
 
 							        <Cell col={2}>
 
-										<img className="blur" style={{width: '100%', height:'90%' }} src={'https://pre00.deviantart.net/b6a2/th/pre/f/2018/189/d/1/2_by_edalie_chan-dcgo1uh.png'} />
+										<img className="blur" style={{width: '70%', height:'90%' }} src={'https://pre00.deviantart.net/b6a2/th/pre/f/2018/189/d/1/2_by_edalie_chan-dcgo1uh.png'} />
 							        </Cell>
 							        <Cell col={2}>
 
-										<img className="blur" style={{width: '100%', height:'100%' }} src={('https://pre00.deviantart.net/0694/th/pre/f/2018/189/d/2/1_by_edalie_chan-dcgo1vg.png')} />
+										<Link to="/yuri" > <img className="blur" style={{width: '70%', height:'100%' }} src={('https://pre00.deviantart.net/0694/th/pre/f/2018/189/d/2/1_by_edalie_chan-dcgo1vg.png')} />
+							        </Link></Cell><Cell col={2}> 
+
+										<Link to="/clip" > <img className="blur" style={{width: '75%', height:'95%' }} src={('https://pre00.deviantart.net/2331/th/pre/f/2018/189/a/2/4_by_edalie_chan-dcgo1t6.png')} />
+							        </Link></Cell><Cell col={2}>
+
+										<img className="blur" style={{width: '75%', height:'95%' }} src={('https://pre00.deviantart.net/4df6/th/pre/f/2018/189/a/a/3_by_edalie_chan-dcgo1tp.png')} />
 							        </Cell><Cell col={2}>
 
-										<img className="blur" style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/2331/th/pre/f/2018/189/a/2/4_by_edalie_chan-dcgo1t6.png')} />
-							        </Cell><Cell col={2}>
-
-										<img className="blur" style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/4df6/th/pre/f/2018/189/a/a/3_by_edalie_chan-dcgo1tp.png')} />
-							        </Cell><Cell col={2}>
-
-										<img className="blur" style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/72e4/th/pre/f/2018/227/2/1/6_by_edalie_chan-dck7ivs.png')} />
+										<img className="blur" style={{width: '70%', height:'90%' }} src={('https://pre00.deviantart.net/72e4/th/pre/f/2018/227/2/1/6_by_edalie_chan-dck7ivs.png')} />
 							        </Cell>
 							        <Cell col={2}>
 
-										<img className="blur" style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/b238/th/pre/i/2018/227/d/6/5_by_edalie_chan-dck7iwc.png')} />
+										<img className="blur" style={{width: '75%', height:'90%' }} src={('https://pre00.deviantart.net/b238/th/pre/i/2018/227/d/6/5_by_edalie_chan-dck7iwc.png')} />
 							        </Cell>
 									
-							    </Grid>	
-							   
+							    </Grid>	*/}
+							
 							<div className="box" > 
 							    <p style={{fontSize:'35px'}}> Latest Videos</p>	 
 							</div>
@@ -102,12 +103,12 @@ class LandingPage extends Component {
 
 						    </Grid>	
 								
-
+{/* line border
 							<div style={{background:'black', width:'100%', height:'10px', marginBottom:'50px'}}> </div>
 
-						    {/* Members */ }
+						    
 							
-				{/* line border */}
+				 
 						    <Grid style={{paddingBottom:'20px'}}> 
 						    	<Cell col={4}>
 
@@ -129,18 +130,18 @@ class LandingPage extends Component {
 								</Cell>
 								<Cell col={4}>
 
-									<img style={{width: '100%', height:'100%' }} src={'https://static1.squarespace.com/static/5782ae45414fb585ab372cbd/5a79f940f9619a6fa1424052/5a79f943c83025d6ef23ba21/1517944934814/tshirt.jpg?format=300w'} />
+									<img style={{width: '50%', height:'100%' }} src={'https://static1.squarespace.com/static/5782ae45414fb585ab372cbd/5a79f940f9619a6fa1424052/5a79f943c83025d6ef23ba21/1517944934814/tshirt.jpg?format=300w'} />
 						        </Cell><Cell col={4}>
 
-									<img style={{width: '70%', height:'70%' }} src={('https://i.ebayimg.com/images/g/GFIAAOSwxcRW9DVC/s-l300.jpg')} />
+									<img style={{width: '40%', height:'85%' }} src={('https://i.ebayimg.com/images/g/GFIAAOSwxcRW9DVC/s-l300.jpg')} />
 						        </Cell><Cell col={4}>
 
-									<img style={{width: '70%', height:'70%' }} src={('https://static1.squarespace.com/static/59f217ff6f4ca3b7ef20c7f7/59f272480d9297adf930e3dc/59f2737764265f30648cc12e/1527713426859/Nonfiction-Pen-Paper-Writing-Workshops-fountain-pen-notebook.jpg?format=300w')} />
+									<img style={{width: '40%', height:'70%' }} src={('https://static1.squarespace.com/static/59f217ff6f4ca3b7ef20c7f7/59f272480d9297adf930e3dc/59f2737764265f30648cc12e/1527713426859/Nonfiction-Pen-Paper-Writing-Workshops-fountain-pen-notebook.jpg?format=300w')} />
 						        </Cell>
 
 						    </Grid>
 								
-
+						*/}
 						     
 						    	
 						</div>

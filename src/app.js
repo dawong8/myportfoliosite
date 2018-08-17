@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import Main from './components/main';
 import Popup from './components/popup';
-import Members from './components/members';
 
 
 import { Layout, Header, Navigation, Drawer, Content, Button, Footer, FooterLinkList, FooterSection } from 'react-mdl';
@@ -25,17 +24,17 @@ class App extends React.Component {
 
 				            <Navigation>
 				            	<Link to="/"> <Button> <p className="box"> HOME </p> </Button> </Link> 
-				                <Link to="/"> <Button> <p className="box"> WATCH </p> </Button> </Link>
+				                <a href="https://youtube.com" target="_blank"> <Button> <p className="box"> WATCH </p> </Button> </a>
 				                <Link to="#">  <Popup />  </Link>
 
-				                <Link to="/"> <Button> <p className="box"> BLOG </p> </Button> </Link>
+				                <Link to="/projects"> <Button> <p className="box"> BLOG </p> </Button> </Link>
 				                <Link to="/projects"> <Button> <p className="box"> PLAY </p> </Button> </Link>
-				                <Link to="/projects"> <Button> <p className="box"> SHOP</p>  </Button> </Link>
+				                <a href="https://ctrlf.bigcartel.com/" target="_blank"> <Button> <p className="box"> SHOP</p>  </Button> </a>
 				            </Navigation>
 				        </Header>
 				        <Drawer title="">
-				                <Link to="#">  <Members />  </Link>
-				                
+				                <Link to="/Members" > <Button> <p className="box" style={{paddingTop:'15px'}}> Click Me! </p> </Button> </Link> 
+
 				        </Drawer>
 
 

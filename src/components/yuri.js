@@ -54,10 +54,13 @@ class Yuri extends Component {
 								</Cell>
 								<Cell col={12}>
 									<div className="fancy-font" > 
-									    <p style={{fontSize:'35px'}}>About Yuri </p>	 
+									    <p style={{fontSize:'35px'}}> Yuri </p>	 
+									    <p style={{fontSize:'20px', color:'purple'}}> THE QUEEN </p>	 
+
 									</div>
 									
 								</Cell>
+
 								 <Cell col={6}>
 
 									<div className="box" > 
@@ -91,6 +94,8 @@ class Yuri extends Component {
 						        <Cell col={1}> </Cell>
 						    </Grid>
 					</div>
+
+					<div style={{paddingBottom:'100px'}}> <Hello /> </div>
 
 
 

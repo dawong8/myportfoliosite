@@ -6,7 +6,7 @@ class Projects extends Component {
 		return (
 				<div> 
 
-					<h1> Projects page </h1>
+					<h1 className="box" style={{padding:'300px'}}> COMING SOON... </h1>
 
 
 
