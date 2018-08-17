@@ -41,33 +41,33 @@ class Clip extends Component {
 
 								<Cell col={12}> 
 									<p className="fancy-font" style={{fontSize:'25px', color:'white'}}> LEAGUE OF LEGENDS: KILLER LADIES </p> 
-									<p className="box" style={{fontSize:'15px', color:'white'}}> As a mid-lane main, below are my top champions that I enjoy playing. I have been playing since Season 4. My playstyle is more towards burst AP assassins, especially with a gap closer or jump. In addition, I do like Top lane and Jungle.</p> 
+									<p className="box" style={{fontSize:'15px', color:'white'}}> League is my favorite game. As a mid-lane main, below are my top champions that I enjoy playing. I have been playing since Season 4. My playstyle is more towards burst AP assassins, especially with a gap closer or jump. In addition, I do like Top lane and Jungle.</p> 
 
 								</Cell>
 								<Cell col={12}> 
 
 								</Cell>
 								<Cell col={3}> 
-									<img style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/a0cb/th/pre/f/2015/238/1/d/screen_shot_2015_08_26_at_8_54_43_pm_by_frangorman-d977fux.png')} />
+									<img className="lightup" style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/a0cb/th/pre/f/2015/238/1/d/screen_shot_2015_08_26_at_8_54_43_pm_by_frangorman-d977fux.png')} />
 									<p className="fancy-font" style={{fontSize:'20px', color:'white'}}> LeBLANC </p>
 								</Cell>
 								
 								
 								<Cell col={3}> 
-									<img style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/6026/th/pre/i/2016/045/d/8/diana_by_haeaswen-d9rrr1e.jpg')} />
+									<img className="lightup" style={{width: '100%', height:'90%' }} src={('https://pre00.deviantart.net/6026/th/pre/i/2016/045/d/8/diana_by_haeaswen-d9rrr1e.jpg')} />
 									<p className="fancy-font" style={{fontSize:'20px', color:'white'}}> DIANA </p>
 								</Cell>
 
 								
 
 								<Cell col={3}> 
-									<img style={{width: '100%', height:'90%' }} src={('http://www.lol-wallpapers.com/wp-content/uploads/2018/06/Irelia-by-Haeaswen-HD-Wallpaper-Background-Fan-Art-Artwork-League-of-Legends-lol.jpg')} />
+									<img className="lightup" style={{width: '100%', height:'90%' }} src={('http://www.lol-wallpapers.com/wp-content/uploads/2018/06/Irelia-by-Haeaswen-HD-Wallpaper-Background-Fan-Art-Artwork-League-of-Legends-lol.jpg')} />
 									<p className="fancy-font" style={{fontSize:'20px', color:'white'}}> IRELIA </p>
 								</Cell>
 
 								<Cell col={3}> 
 
-									<img style={{width: '100%', height:'90%' }} src={('https://img00.deviantart.net/a1b9/i/2015/127/1/9/katarina_by_obywatelsowa-d8shm86.jpg')} />
+									<img className="lightup" style={{width: '100%', height:'90%' }} src={('https://img00.deviantart.net/a1b9/i/2015/127/1/9/katarina_by_obywatelsowa-d8shm86.jpg')} />
 									<p className="fancy-font" style={{fontSize:'20px', color:'white'}}> KATARINA </p> 
 
 								</Cell>
@@ -76,19 +76,19 @@ class Clip extends Component {
 								</Cell>
 							
 								<Cell col={3}> 
-									<img style={{width: '100%', height:'90%' }} src={('https://fanart.na.leagueoflegends.com/media/user_uploads/arts/20180405/s/5b073367-9e23-4a2d-815c-6e004e862db6_1000x1000_scaled.jpg')} />
+									<img className="lightup" style={{width: '100%', height:'90%' }} src={('https://fanart.na.leagueoflegends.com/media/user_uploads/arts/20180405/s/5b073367-9e23-4a2d-815c-6e004e862db6_1000x1000_scaled.jpg')} />
 									<p className="fancy-font" style={{fontSize:'20px', color:'white'}}> AKALI </p>
 								</Cell>
 								<Cell col={3}> 
-									<img style={{width: '100%', height:'90%' }} src={('https://i.pinimg.com/originals/48/3b/38/483b38fc0c8c28b27b673bf84dc34a90.jpg')} />
+									<img className="lightup" style={{width: '100%', height:'90%' }} src={('https://i.pinimg.com/originals/48/3b/38/483b38fc0c8c28b27b673bf84dc34a90.jpg')} />
 									<p className="fancy-font" style={{fontSize:'20px', color:'white'}}> AHRI </p>
 								</Cell>
 								<Cell col={3}> 
-									<img style={{width: '100%', height:'90%' }} src={('http://www.lol-wallpapers.com/wp-content/uploads/2017/04/Nidalee-Portrait-by-Haeaswen-HD-Wallpaper-Fan-Artwork-League-of-Legends-lol.jpg')} />
+									<img className="lightup" style={{width: '100%', height:'90%' }} src={('http://www.lol-wallpapers.com/wp-content/uploads/2017/04/Nidalee-Portrait-by-Haeaswen-HD-Wallpaper-Fan-Artwork-League-of-Legends-lol.jpg')} />
 									<p className="fancy-font" style={{fontSize:'20px', color:'white'}}> NIDALEE </p>
 								</Cell>
 								<Cell col={3}> 
-									<img style={{width: '100%', height:'90%' }} src={('https://orig00.deviantart.net/2355/f/2012/059/b/0/evelynn_by_nyra119-d4rally.jpg')} />
+									<img className="lightup" style={{width: '100%', height:'90%' }} src={('https://orig00.deviantart.net/2355/f/2012/059/b/0/evelynn_by_nyra119-d4rally.jpg')} />
 									<p className="fancy-font" style={{fontSize:'20px', color:'white'}}> EVE </p>
 								</Cell>
 							</Grid>

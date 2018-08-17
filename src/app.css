@@ -81,4 +81,11 @@ body {
 
 }
 
+.lightup { 
+  opacity: 0.7; 
+} 
+
+.lightup:hover { 
+  opacity: 1; 
+}
 
