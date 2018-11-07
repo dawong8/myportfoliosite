@@ -1,26 +1,30 @@
 import React, { Component } from 'react'; 
-import { Slide } from 'react-slideshow-image';
-import { Cell, Grid} from 'react-mdl';
+//import { Slide } from 'react-slideshow-image';
+import { Tabs, Tab} from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+/*
 const images = [
-  require('../images/sugarcover.png'),
-  require('../images/clipcover.png'),
-  require('../images/jaydencover.png'),
+  require('../images/winner.png'),
 
 ];
 
 
+
 const Slideshow = () => {
     return (
-        <Slide
+        <Slide 
           images={images}
           duration={5000}
-          transitionDuration={1000}
+          transitionDuration={1000} 
+          indicators={false}
+          arrows={false}
+
         />
     )
-}
+}*/
 
 class LandingPage extends Component {
 	render() {
@@ -28,80 +32,114 @@ class LandingPage extends Component {
 		return (
 				<div> 
 					{/* Website Cover: Slideshow */}
-					<div style={{width: '75%', margin:'auto', padding:'50px'}}> 
 
-						<Slideshow />
+				{/* first(cover) section */}
+					<div> 
+						<img src={require('../images/winner.png')} style={{width:'100%'}}/>
+							{/*<Slideshow />*/}
+
 					</div>
+					<div className="w3-container w3-black w3-padding-64 w3-xxlarge" id="menu">
+					  <div className="w3-content fancy-font">
+					  
+					    <h1 className="w3-center w3-xxlarge box" style={{marginBottom:'64px'}}>Meet Team Yuri</h1>
+						<Tabs defaultActiveKey={1} id="uncontrolled-tab-example" className="w3-center" >
+						  <Tab eventKey={1} title="YURI" style={{color:'pink'}}>
+						  	    <p> </p>
 
+						        <img src={require('../images/yuri.png')} style={{width:'15%', align:'auto'}}/>
+						        <p><b>THE QUEEN</b></p>
 
+						        <p className="w3-text-grey" style={{textAlign:'left'}}>I am Yuri. I started streaming a few years ago and I came to realize that the community was a lot more toxic than it had to be. I always thought a little trolling is funny, friendly banters spice up conversations and a little sarcasm could be appreciated. That wasn’t what I experienced as a streamer. I’ve had people attack me for the way I look, the way I sound and people who legitimately would not stop harassing me. I came to realize that there is a part of this gaming universe I escape to that’s simply unsafe and unkind. That’s when I decided, I’m going to start my own community. One where people like myself could escape to and find solace without being afraid to show everyone who they really are. I brought together a group of very talented people to start a movement.</p>
+						  </Tab>
+						  <Tab eventKey={2} title="CLIP" style={{color:'blue'}}>
+						  	    <p> </p>
 
-					{/* About 
-					<div className="backdrop"> 
-						<div style={{padding:'5%'}}> 
-							<div className="panel" style={{padding:'5%'}}> 
-								<img style={{width: '10%', height:'auto' }} src={require('../images/yuri.png')} />
+						        <img src={require('../images/clip.png')} style={{width:'15%', align:'auto'}}/>
+						        <p> </p>
 
-								<p style={{ fontSize: '35px'}}> About Us </p>
-								<p className="italics"> Under the sun.</p>
+						        <p><b>THE VILLAIN</b></p>
 
-								<br /> 
-								<p style={{width: '75%', margin: 'auto'}}> 
-								I am Yuri. I started streaming a few years ago and I came to realize that the community was a lot more toxic than it had to be. I always thought a little trolling is funny, friendly banters spice up conversations and a little sarcasm could be appreciated. That wasn’t what I experienced as a streamer. I’ve had people attack me for the way I look, the way I sound and people who legitimately would not stop harassing me. I came to realize that there is a part of this gaming universe I escape to that’s simply unsafe and unkind. That’s when I decided, I’m going to start my own community. One where people like myself could escape to and find solace without being afraid to show everyone who they really are. I brought together a group of very talented people to start a movement.				</p>
+						        <p className="w3-text-grey" style={{textAlign:'left'}}>I go by the name Clip. I am an aspiring streamer and computer programmer. I like doing frontend development. This simple website was created all by myself. As a gay boy, I am extrememly supportive of all of Team Yuri values. I believe by creating a positive environment will provide an enriching atmosphere for the gaming community. Games that I enjoy include League of Legends, Minecraft, The Sims, WWE 2k18, and VR Chat. My life goals is to not only become a professional frontend developer but also become a role model to inspire others that are in similar situations. I grew up from a traditional household where it is looked down upon for my lifestyle; thus, this taught me many life lessons and made up the person who I am today. Stay tuned for more Team Yuri features.</p>
+						  </Tab>
+						  <Tab eventKey={3} title="MOMO" style={{color:'red'}}>
+								<p> </p>
 
-							</div>
+						        <img src={require('../images/momo.png')} style={{width:'15%', align:'auto'}}/>
+						        <p> </p>
+
+						        <p><b>THE SCIENTIST</b></p>
+
+						        <p className="w3-text-grey" style={{textAlign:'left'}}> Just a casual in all things. Play games with this dude called Trinimmortal sometimes.</p>
+						  </Tab>
+						  <Tab eventKey={4} title="SUGAR" style={{color:'orange'}}>
+								<p> </p>
+
+						        <img src={require('../images/sugar.png')} style={{width:'15%', align:'auto'}}/>
+						        <p> </p>
+
+						        <p><b>THE WITCH</b></p>
+
+						        <p className="w3-text-grey" style={{textAlign:'left'}}> Just a casual in all things. Play games with this dude called Trinimmortal sometimes.</p>
+						  </Tab>
+						  <Tab eventKey={5} title="JAYDEN" style={{color:'white'}}>
+								<p> </p>
+
+						        <img src={require('../images/jayden.png')} style={{width:'15%', align:'auto'}}/>
+						        <p> </p>
+
+						        <p><b>THE MUSE</b></p>
+
+						        <p className="w3-text-grey" style={{textAlign:'left'}}> Just a casual in all things. Play games with this dude called Trinimmortal sometimes.</p>
+						  </Tab>
+						  <Tab eventKey={6} title="EDI" style={{color:'yellow'}}>
+								<p> </p>
+
+						        <img src={require('../images/edi.png')} style={{width:'15%', align:'auto'}}/>
+						        <p> </p>
+
+						        <p><b>THE VIRTUOSO</b></p>
+
+						        <p className="w3-text-grey" style={{textAlign:'left'}}> Artist | ENG/日本語 OK! Owner of Give Me Space.</p>
+						  </Tab>
+						  <Tab eventKey={7} title="BUNBUN" style={{color:'brown'}}>
+								<p> </p>
+
+						        <img src={require('../images/bun.png')} style={{width:'15%', align:'auto'}}/>
+						        <p> </p>
+
+						        <p><b>THE HUNTER</b></p>
+
+						        <p className="w3-text-grey" style={{textAlign:'left'}}> Artist | ENG/日本語 OK! Owner of Give Me Space.</p>
+						  </Tab>
+						  <Tab eventKey={8} title="SKY" style={{color:'#008080'}}>
+								<p> </p>
+
+						        <img src={require('../images/sky.png')} style={{width:'15%', align:'auto'}}/>
+						        <p> </p>
+
+						        <p><b>THE NOBLEWOMAN</b></p>
+
+						        <p className="w3-text-grey" style={{textAlign:'left'}}> Artist | ENG/日本語 OK! Owner of Give Me Space.</p>
+						  </Tab>
+						  <Tab eventKey={9} title="SHADOW" style={{color:'gray'}}>
+								<p> </p>
+
+						        <img src={require('../images/shadow.png')} style={{width:'15%', align:'auto'}}/>
+						        <p> </p>
+
+						        <p><b>THE SPY</b></p>
+
+						        <p className="w3-text-grey" style={{textAlign:'left'}}> Feminist, Alcoholic, Social Entrepreneur, Community Celebratoire , Vampire Slayer. Battery low, gotta use my phone strategically now.</p>
+						  </Tab>
+						</Tabs>
+
+						<hr/>
+
 						</div>
+						
+
 					</div>
-
-					*/}
-					{/* Videos */}
-					
-								
-{/* line border
-							<div style={{background:'black', width:'100%', height:'10px', marginBottom:'50px'}}> </div>
-
-						    
-							
-				 
-						    <Grid style={{paddingBottom:'20px'}}> 
-						    	<Cell col={4}>
-
-									<div className="fancy-font" > 
-									    <p style={{fontSize:'35px'}}> Shop </p>	 
-									</div>
-								</Cell>
-								<Cell col={4}>
-
-									<div className="fancy-font" > 
-									    <p style={{fontSize:'35px'}}> Games </p>	 
-									</div>
-								</Cell>
-								<Cell col={4}>
-
-									<div className="fancy-font" > 
-									    <p style={{fontSize:'35px'}}> Blog </p>	 
-									</div>
-								</Cell>
-								<Cell col={4}>
-
-									<img style={{width: '50%', height:'100%' }} src={'https://static1.squarespace.com/static/5782ae45414fb585ab372cbd/5a79f940f9619a6fa1424052/5a79f943c83025d6ef23ba21/1517944934814/tshirt.jpg?format=300w'} />
-						        </Cell><Cell col={4}>
-
-									<img style={{width: '40%', height:'85%' }} src={('https://i.ebayimg.com/images/g/GFIAAOSwxcRW9DVC/s-l300.jpg')} />
-						        </Cell><Cell col={4}>
-
-									<img style={{width: '40%', height:'70%' }} src={('https://static1.squarespace.com/static/59f217ff6f4ca3b7ef20c7f7/59f272480d9297adf930e3dc/59f2737764265f30648cc12e/1527713426859/Nonfiction-Pen-Paper-Writing-Workshops-fountain-pen-notebook.jpg?format=300w')} />
-						        </Cell>
-
-						    </Grid>
-								
-						*/}
-					
-					{/* Videos, Shop, Game, and Latest Blog Posts (?) */}
-
-
-
-					
-
 
 
 				</div>

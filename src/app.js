@@ -8,45 +8,43 @@ import { Link } from 'react-router-dom';
 import './app.css';
 
 
+
 class App extends React.Component {
+	constructor(props) {
+		super(props); 
+		this.state={
+			isOpen: false
+		};
+	}
+
+	toggle() {
+		this.setState({
+			isOpen: !this.state.isOpen
+		});
+	}
+
 	render () {
 		return (
 			<div>
-				{/* Uses Link transparent header that draws on top of the layout's background */}
-				<div style={{height: '50px', position: 'relative'}}>
-					
-					{/*<Link to="/"> <img style={{width:'4%', padding:'15px', float:'left'}}src={require('./images/yuri.png')}/> </Link>*/}
+				<div class="w3-top w3-hide-small">
+  					<div class="w3-bar w3-xlarge w3-black w3-opacity w3-hover-opacity-off" id="myNavbar">
+  						<Link to="/"> <img className="w3-bar-item w3-button" style={{width: '5%' }} src={require('./images/logo.png')}/>  </Link>
 
+		            	<Link to="/aboutme"> <p className="box w3-bar-item w3-button"> About </p> </Link>
 
-				    <Layout >
-				        <Header transparent title=" " style={{color: '#000'}}>
+		                <a href="https://www.youtube.com/channel/UCSXmot2ws4huu3ZzTZAP4VA?" target="_blank"> <p className="box w3-bar-item w3-button"> Watch </p>  </a>
+		                <Link to="/projects"> <p className="box w3-bar-item w3-button"> Events </p>  </Link>
+		                <a href="https://discord.gg/yfexC3p" target="_blank">  <p className="box w3-bar-item w3-button"> Contact </p>  </a>
 
-				            <Navigation>
-				            	<Link to="/"> <Button> <p className="box"> HOME </p> </Button> </Link> 
-				            	<Link to="/aboutme"> <Button> <p className="box"> About Us</p> </Button> </Link>
+		            </div>
+		        </div>
 
-				                <a href="https://www.youtube.com/channel/UCSXmot2ws4huu3ZzTZAP4VA?" target="_blank"> <Button> <p className="box"> WATCH </p> </Button> </a>
-				                <Link to="/projects"> <Button> <p className="box"> Members </p> </Button> </Link>
-
-				                <Button> <p className="box" style={{color:'black'}}> Stay Tuned </p> </Button>
-				            </Navigation>
-				        </Header>
-				        <Drawer title="">
-				                <Link to="/Members" > <Button> <p className="box" style={{paddingTop:'15px'}}> Click Me! </p> </Button> </Link> 
-
-				        </Drawer>
-
-				        <Content />
-				    </Layout>
-				</div>
-				<div style={{background:'black', width:'100%', height:'10px'}}> </div>
 				<Main />
 
 
-				<Footer size="mini" style={{background:'white'}}>
-				    <FooterSection type="left" logo="Team Yuri">
+				<Footer size="mini" style={{background:'black'}}>
+				    <FooterSection type="left" logo="Team Yuri ©">
 				        <FooterLinkList>
-				        	Team Yuri ©
 				            <a href="https://www.scribd.com/document/390270528/Privacy" target="_blank">Privacy & Terms</a>
 
 				        </FooterLinkList>

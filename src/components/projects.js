@@ -6,84 +6,47 @@ class Projects extends Component {
 	render() {
 
 		return (
-				<div> 
-					
-					<div style={{padding: '50px'}}> 
+				<div>
+					<div> 
+						<img src={require('../images/cover.png')} style={{width:'100%'}}/>
+							{/*<Slideshow />*/}
 
-						<Grid> 
-							<Cell col={6}> 
-								<img style={{width: '15%' }} src={require('../images/yuri.png')} /> 
-								<p> </p>
-								<div className="fancy-font"  > 
-									    <p style={{fontSize:'20px', color:'purple'}}> YURI </p>	 
-
-									</div>
-								<p className="box"> I am Yuri. I started streaming a few years ago and I came to realize that the community was a lot more toxic than it had to be. I always thought a little trolling is funny, friendly banters spice up conversations and a little sarcasm could be appreciated. That wasn’t what I experienced as a streamer. I’ve had people attack me for the way I look, the way I sound and people who legitimately would not stop harassing me. I came to realize that there is a part of this gaming universe I escape to that’s simply unsafe and unkind. That’s when I decided, I’m going to start my own community. One where people like myself could escape to and find solace without being afraid to show everyone who they really are. I brought together a group of very talented people to start a movement.				</p>
-
-							</Cell>
-
-							<Cell col={6}> 
-								<img style={{width: '15%' }} src={require('../images/clip.png')} /> 
-								<p> </p>
-								<div className="fancy-font"  > 
-									    <p style={{fontSize:'20px', color:'blue'}}> CLIP </p>	 
-
-									</div>
-								<p className="box"> I go by the name Clip. I am an aspiring streamer and computer programmer. I like doing frontend development. This simple website was created all by myself. As a gay boy, I am extrememly supportive of all of Team Yuri values. I believe by creating a positive environment will provide an enriching atmosphere for the gaming community. Games that I enjoy include League of Legends, Minecraft, The Sims, WWE 2k18, and VR Chat. My life goals is to not only become a professional frontend developer but also become a role model to inspire others that are in similar situations. I grew up from a traditional household where it is looked down upon for my lifestyle; thus, this taught me many life lessons and made up the person who I am today. Stay tuned for more Team Yuri features.  </p>
-								
-							</Cell>
-
-							<Cell col={6}> 
-								<img style={{width: '15%' }} src={require('../images/jayden.png')} /> 
-								<p> </p>
-								<div className="fancy-font"  > 
-									    <p style={{fontSize:'20px', color:'gray'}}> JAYDEN </p>	 
-
-									</div>
-								<p className="box"> Currently no bio. :( </p> 
-							</Cell>
-
-							<Cell col={6}> 
-								<img style={{width: '15%' }} src={require('../images/sugar.png')} /> 
-								<p> </p>
-								<div className="fancy-font"  > 
-									    <p style={{fontSize:'20px', color:'orange'}}> SUGAR </p>	 
-
-									</div>
-								<p className="box"> Currently no bio. :( </p> 
-							</Cell>
-							<Cell col={6}> 
-								<img style={{width: '15%' }} src={require('../images/momo.png')} /> 
-								<p> </p>
-								<div className="fancy-font"  > 
-									    <p style={{fontSize:'20px', color:'red'}}> MOMO </p>	 
-
-									</div>
-								<p className="box"> Currently no bio. :( </p> 
-							</Cell>
-							<Cell col={6}> 
-								<img style={{width: '15%' }} src={require('../images/edi.png')} /> 
-								<p> </p>
-								<div className="fancy-font"  > 
-									    <p style={{fontSize:'20px', color:'brown'}}> EDI </p>	 
-
-									</div>
-								<p className="box"> Currently no bio. :( </p> 
-							</Cell>
-							<Cell col={6}> 
-								<img style={{width: '15%' }} src={require('../images/ann.png')} /> 
-								<p> </p>
-								<div className="fancy-font"  > 
-									    <p style={{fontSize:'20px', color:'green'}}> TRAGEDYANN </p>	 
-
-									</div>
-								<p className="box"> Currently no bio. :( </p> 
-							</Cell>
-
-						</Grid>
 					</div>
+					<div classNameName="w3-center box" style={{paddingTop:'60px', background:'black'}}> 
+						 <div className="w3-row-padding w3-padding-64 w3-center">
+						 	<h1 className="fancy-font" style={{color:"white"}}> Top Players </h1>
+						    <div className="w3-third box">
 
-				</div>
+						      <img src={require('../images/momo2.png')} style={{width:'50%'}}/>
+						      <p className="fancy-font" style={{fontSize:'20px'}}>Momo</p>
+						      <p>  Highest Placement: 13th  </p>
+						    </div>
+						    <div className="w3-third box">
+
+						      <img src={require('../images/ofriezy.png')} style={{width:'75%'}}/>
+						      <p className="fancy-font" style={{fontSize:'20px'}}>oFriezzy</p>
+						      <p> UHC: Witches' Night Out - Winner </p>
+						    </div>
+						    <div className="w3-third box">
+
+						      <img src={require('../images/aigaming.png')} style={{width:'40%'}}/>
+						      <p> </p>
+						      <p className="fancy-font" style={{fontSize:'20px'}}>AIgaming</p>
+						      <p> Highest Placement: 7th </p>
+						    </div>
+						    
+						</div>
+	    			</div>
+
+			        <div className="w3-container w3-padding-64 w3-blue-grey w3-grayscale-min w3-xlarge fancy-font">
+  						<div className="w3-content" style={{paddingTop:'50px'}}>
+
+  							<iframe className="w3-half" width="560" height="315" src="https://www.youtube.com/embed/vqSevu2DCK0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  							<p className="w3-half" style={{padding:'100px', fontSize:"18px"}}> Want to particpate in our next event? Join our <a href="https://discord.gg/yfexC3p" target="_blank" style={{color:"black"}}> DISCORD </a> </p>
+  						</div>
+  					</div>
+    			</div>
 
 
 			); 

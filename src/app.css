@@ -2,12 +2,18 @@
 @import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
 @import url('https://fonts.googleapis.com/css?family=Poiret+One');
 
-body {
-  margin: 0;
-  padding: 0;
-  text-align: center; 
-  background: white;
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/w3images/pizza.jpg");
+    min-height: 90%;
+}
 
+ul {
+  list-style: none;
 }
 
 
@@ -45,6 +51,7 @@ body {
 .box {
 	padding: 0px;
 	font-family: 'Gloria Hallelujah', cursive;
+  color: white;
 
 }
 
@@ -88,4 +95,33 @@ body {
 .lightup:hover { 
   opacity: 1; 
 }
+
+
+/* Navigation Bar */
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  color: white;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+
 
